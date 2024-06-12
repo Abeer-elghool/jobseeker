@@ -1,0 +1,2743 @@
+{
+	"info": {
+		"_postman_id": "d91adcb8-a84f-42b8-8c0d-9eb5633e496e",
+		"name": "Api Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12998697",
+		"_collection_link": "https://lunar-moon-203357.postman.co/workspace/jobsGlobal~f4ad3ae3-3e3a-4b70-bbda-78256051a088/collection/12998697-d91adcb8-a84f-42b8-8c0d-9eb5633e496e?action=share&source=collection_link&creator=12998697"
+	},
+	"item": [
+		{
+			"name": "Job Seeker",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "abeer",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "abeermohamed",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "abeerelghool@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "mobile_number",
+											"value": "01020187069",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "123456789",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/user/register",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "abeer",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "abeerelghool@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456789",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "123456789",
+													"type": "text"
+												},
+												{
+													"key": "mobile_number",
+													"value": "01020187069",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/user/register",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"register"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 21:45:03 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 21:45:03 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "57"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"User registered successfully\",\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTY0ZDUzZjM4YjM3YWU1NjhkNDdlNTE0YTBhOGZiMzdiNDUyMjljZTE3MjgwOGExMDhkZjhiNWQxOGFhNmM0ZjliMTY4ZDBiMjY3ZmFkODMiLCJpYXQiOjE3MTgxNDIzMDMuMzcyMDgsIm5iZiI6MTcxODE0MjMwMy4zNzIwODIsImV4cCI6MTc0OTY3ODMwMy4zNjg1MzcsInN1YiI6IjQiLCJzY29wZXMiOltdfQ.QyaXNexeb_1UUi-6k36ZVcBA4ITgj7LA1_KvbJrktktboV5q18Mn9jqtvoadeYFsiAIU2QscWfH59iHdtHpZ_TCCjcwA3t3kQCIMiQAj8oGqVN-Tq8VfNd6RAXVfVbHXLZojCoEU3GjPm905jHgnfaD1dthFkRiEpJuRkdysc81CqrgtVrI71aw0JrHp2-JtXLrengxuG3NOdAlcdasaD8t8UeywGmoXjp9cpsKdbRLqzuYGrKtH-aHPwqT5L4S9V4C_6QiY3QwBSNqffzanY3NDpTTIylOFsNlz1GIHkMTfrdvG0F-zf4o_lPZ8IQ1cESI5nTy5feB4kfCISIqfZOekY50CwQlqfPQlNrOGi0yNL4sI7yd8ae44pttpglL5XEE_qstQ55FpW__N5vZqPhPJYRio1CK80qqqFJZBAz9ZOEbw3xqZLwM9hlbmqds7peZDrCZyn1QRGigFHYEpVtkdAY5tBZt8MDfFXobt1ONX7FzMdBl_2GuC7Elqu5RzW7p_8J-5mHkEwARGmmUGCNnPohIGUaryX-ST9G8e9q96A0Lh_Y7c8JI2MO9JccI0o2KDHjqXN783FptqsFBBKHbPjB7smf1r-UXHF7Bqf8aVaTNX_qqzq4ZEiwsAHqCwM2aK-8chV7pDXFajsW_oqwL02gGNMfrV04y3hUbVUW8\"\n}"
+								},
+								{
+									"name": "fail",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "abeer",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "email",
+													"value": "abeerelghool@gmail.com",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "password",
+													"value": "123456789",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "password_confirmation",
+													"value": "123456789",
+													"type": "text",
+													"disabled": true
+												},
+												{
+													"key": "mobile_number",
+													"value": "01020187069",
+													"type": "text",
+													"disabled": true
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/user/register",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"register"
+											]
+										}
+									},
+									"status": "Unprocessable Content",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:04:47 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:04:47 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "56"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"The name field is required. (and 3 more errors)\",\n    \"errors\": {\n        \"name\": [\n            \"The name field is required.\"\n        ],\n        \"email\": [\n            \"The email field is required.\"\n        ],\n        \"password\": [\n            \"The password field is required.\"\n        ],\n        \"mobile_number\": [\n            \"The mobile number field is required.\"\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "identifier",
+											"value": "abeermohamed",
+											"description": "user can login using mobile number or username",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/user/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "identifier",
+													"value": "abeerde4e1",
+													"description": "user can login using mobile number or username",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456789",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/user/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 22:29:54 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 22:29:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"0f4f3b35-0eea-4222-9e05-f5752ccc1c80\",\n        \"name\": \"abeer\",\n        \"username\": \"abeerde4e1\",\n        \"mobile_number\": \"01020187069\",\n        \"email\": \"abeerelghool@gmail.com\",\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjFiOWM0MzM0MDlmMjY3ODgxOTQwYzU3YmIxNmI5MWQyZTY0NGRhZjdiNDliMjZjMzE4ZDIyMzY3MjE2NjYzMmFlY2U0YjE5OWRlZWRkN2MiLCJpYXQiOjE3MTgxNDQ5OTQuNjE0MzkyLCJuYmYiOjE3MTgxNDQ5OTQuNjE0Mzk0LCJleHAiOjE3NDk2ODA5OTQuNjAyMTQ5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.K6uSrLSewGRALs50KF0jl1es6nzFloSHDRhyEfn56aAnyo_cpZRWuPpJLQBV7FXETIPVm4ACKQCq-oPBA7G8eC_ssuWKoVwTwy-xXOMgYiiUoe_fIXEII5Cc6V8qxiibfjv38JfVTSEGqCO9Dp2VomkTFznQXzGyZZFd1vQ6f1YsGFd0oHj_C3-wCjaS2PA90eKQiZDT8r5DRIlCc-XPnSSoEB8NBjayJpd1aK0tVlVRXSAsT_CwwDLoXVKDGDTbWPcDVVNNP0N4Y9j3Fxz442JsEaifO8Ol8gpS9ZY8xBY7_3mxUvzqPdE8lijxmaRoassBwDVm6NOOAgcOFxNjLsDutKtu8JO9aFXHw45pHPac7ZW_FtTsascDqIlG3uIMIu5jtRAhEB471qcc4KqnKNPY9S4Z-PkKyw3oWRnSMlWpS6iFdHdnaosUBfvzpjR0g7zZS-Q2cgdLdG5UJJM_d2ShdAf99uAqm2BsQsA5YAQTe8wcBWPqad6trCiGjd0VuN29elAN5_RR0kV5qKCs_LMIYJQ-gu9spcyPsBRY666T1vYzPTSgQJaDInnDuUwWQCLw58pVbf93DkeiFxqh236Q9xoMVdnJOEQeX_awdlbqz0uIZ9Hswb2u2GP4GGTGu3J4ZBDLMENrQ0zkdizHPM4GVexLf74e3M9GqCh1U6o\"\n    }\n}"
+								},
+								{
+									"name": "fail",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "identifier",
+													"value": "abeer1de44",
+													"description": "user can login using mobile number or username",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456789",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/user/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"login"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:04:09 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:04:09 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Unauthorized\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Send Verification code",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "identifier",
+											"value": "abeermohamed",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "username",
+											"description": "username || mobile_number",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/user/send-verification-code",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"send-verification-code"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "identifier",
+													"value": "abeer1de445",
+													"type": "text"
+												},
+												{
+													"key": "type",
+													"value": "username",
+													"description": "username || mobile_number",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/user/send-verification-code",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"send-verification-code"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:03:17 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:03:17 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "56"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Verification code sent\"\n}"
+								},
+								{
+									"name": "fail",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "identifier",
+													"value": "abeer1de44",
+													"type": "text"
+												},
+												{
+													"key": "type",
+													"value": "username",
+													"description": "username || mobile_number",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/user/send-verification-code",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"send-verification-code"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:03:28 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:03:28 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "55"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"User with this identifier not found\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Verify Code",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "identifier",
+											"value": "abeermohamed",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "username",
+											"description": "username || mobile_number",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "658654",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/user/verify-code",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"verify-code"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "identifier",
+													"value": "abeer1de445",
+													"type": "text"
+												},
+												{
+													"key": "type",
+													"value": "username",
+													"description": "username || mobile_number",
+													"type": "text"
+												},
+												{
+													"key": "code",
+													"value": "504865",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/user/verify-code",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"verify-code"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:08:01 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:08:01 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Verification successful\"\n}"
+								},
+								{
+									"name": "fail",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "identifier",
+													"value": "abeer1de445",
+													"type": "text"
+												},
+												{
+													"key": "type",
+													"value": "username",
+													"description": "username || mobile_number",
+													"type": "text"
+												},
+												{
+													"key": "code",
+													"value": "5048650",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/user/verify-code",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"verify-code"
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:08:48 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 23:08:48 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Invalid verification code\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{user}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/v1/user/profile",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"profile"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "profile",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{url}}/api/v1/user/profile",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"profile"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 22:30:32 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Tue, 11 Jun 2024 22:30:32 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "55"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"0f4f3b35-0eea-4222-9e05-f5752ccc1c80\",\n        \"name\": \"abeer\",\n        \"username\": \"abeerde4e1\",\n        \"mobile_number\": \"01020187069\",\n        \"email\": \"abeerelghool@gmail.com\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Application",
+					"item": [
+						{
+							"name": "Apply Job",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{user}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "job_id",
+											"value": "d186019c-aa9d-4e59-8891-fe3f8feb5683",
+											"type": "text"
+										},
+										{
+											"key": "cover_letter",
+											"value": "I'm applying this job for.....",
+											"type": "text"
+										},
+										{
+											"key": "cv",
+											"description": "pdf,doc,docx",
+											"type": "file",
+											"src": "/C:/Users/dell/Downloads/Documents/abeerMohamed_backend.pdf"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/user/jobs/apply",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"jobs",
+										"apply"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Job",
+					"item": [
+						{
+							"name": "list",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{user}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/v1/user/jobs",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"user",
+										"jobs"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{url}}/api/v1/user/jobs",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"user",
+												"jobs"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 16:49:20 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 16:49:20 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"d186019c-aa9d-4e59-8891-fe3f8feb5683\",\n            \"title\": \"software developer\",\n            \"description\": \"About the job\\nResponsibilities:\\nCoding and designing\\nIntegrates basic principles of function with processes and procedures to assignments within own work area\\nRelational Database Knowledge\\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\\nUnit testing and documentation.\\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\\nGood analytical skills\",\n            \"location\": \"Cairo, Cairo, Egypt\",\n            \"status\": \"open\",\n            \"created_at\": \"2024-06-12\"\n        },\n        {\n            \"id\": \"fec90217-f76c-415d-9b8d-7d4cc6861e33\",\n            \"title\": \"software developer\",\n            \"description\": \"About the job\\nResponsibilities:\\nCoding and designing\\nIntegrates basic principles of function with processes and procedures to assignments within own work area\\nRelational Database Knowledge\\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\\nUnit testing and documentation.\\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\\nGood analytical skills\",\n            \"location\": \"Cairo, Cairo, Egypt\",\n            \"status\": \"open\",\n            \"created_at\": \"2024-06-12\"\n        },\n        {\n            \"id\": \"b096d90d-052b-487b-87ef-8661117c534b\",\n            \"title\": \"software developer\",\n            \"description\": \"About the job\\nResponsibilities:\\nCoding and designing\\nIntegrates basic principles of function with processes and procedures to assignments within own work area\\nRelational Database Knowledge\\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\\nUnit testing and documentation.\\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\\nGood analytical skills\",\n            \"location\": \"Cairo, Cairo, Egypt\",\n            \"status\": \"open\",\n            \"created_at\": \"2024-06-12\"\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://127.0.0.1:8000/api/v1/user/jobs?page=1\",\n        \"last\": \"http://127.0.0.1:8000/api/v1/user/jobs?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/user/jobs?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://127.0.0.1:8000/api/v1/user/jobs\",\n        \"per_page\": 15,\n        \"to\": 3,\n        \"total\": 3\n    },\n    \"message\": \"\"\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "admin",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "companytwo",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "companyTwo@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "mobile_number",
+											"value": "01020187009",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "123456789",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/admin/register",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"register"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "admin",
+													"type": "text"
+												},
+												{
+													"key": "username",
+													"value": "companyOne",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "companyOne@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "mobile_number",
+													"value": "01020187069",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456789",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "123456789",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/admin/register",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"register"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 13:01:43 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 13:01:43 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Admin registered successfully\",\n    \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjJlYmUzYmI1ZjhiYTM2YmJkN2MzNDE4ZjliZWVkMTE5NzUyY2JjNDhiZmNmYzdiZWQxMzQ5MjE1OTRkYWY2M2Y3YTA2YjdkOTNlMjEyZTciLCJpYXQiOjE3MTgxOTczMDMuNzAzMTUxLCJuYmYiOjE3MTgxOTczMDMuNzAzMTUzLCJleHAiOjE3NDk3MzMzMDMuNjk3MTczLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.q361YezHe_vGqJHvzsVFwy0heOwPXRobob1yNcLzvKNCV3tLVKzcceGnFSbmCe8AFbfjaNNF4X7pMOgmYSvmkPLR9jdIHk1bauVDJAcmZLQfCefid6nrsSUfAABHeyYpGHvbQwQP5_2BZbjJhSQ6Vwcp1wYlBGzamQY607RFRYJFiRktQhyks83HEb8uuwwVqT9QMty-HF4KXOYZvf2N2KRSKyGSunmMNgBP2uN8udcfzmDOYkaJO3E1c76mtLbEN3za8ncMC4nK2G6Fs73nspmcGU8x3mJ2RB3AdNM-q7SIqtTqot4i4i-FIhJkI1HYFna2W1oQ1HxxSFLGqilFJjFcqkzCe8tZGbG1oloYnOpGWCgwAmqn_x12r0uWyV3nUJ37utGtQnwmkRGzrax5BGIdtR7GwhakEfalWRdtvOAdVFV3OXxR3HOw99u5Iul-yjDYnIjzA32vQUQAbNe7QLrpb2QiFUeIBL0stgGOEZ3BEMxEDxfntkfw5ALV3JI1kUc1wJsuvlISM71C6Ql0ZWzXgjfnzC3C1MLdylSEJTwanTu-ge-jW2J3OciaeJzyla6jgsajD58Ct9D4NI2b8HxWUTGfOOxYjuuOB6jxbqTelgkxxNgujdNO7Q4WtwLDIRTzBL_Anf_qCVk9ln0C_df_V4WVmTAZvArMYojQPbs\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "identifier",
+											"value": "companyOne",
+											"description": "user can login using mobile number or username",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456789",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/admin/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"login"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "identifier",
+													"value": "companyOne",
+													"description": "user can login using mobile number or username",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "123456789",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/admin/login",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"login"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 13:40:54 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 13:40:54 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"6ba12b65-e690-4e70-81c3-5dd6b8815a98\",\n        \"name\": \"admin\",\n        \"username\": \"companyOne\",\n        \"mobile_number\": \"01020187069\",\n        \"email\": \"companyOne@gmail.com\",\n        \"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWVkOTkyZjYyMzg5YWZlNWZiNDk4NGQ3ZTU1NjliZmNhOGRhMzFhZWJkYzIzYjk3MDI5ODg5ZDJjYzNiNzExMGJkNmIxNDJmNGVhYzQxMDMiLCJpYXQiOjE3MTgxOTk2NTQuMDc3MzA2LCJuYmYiOjE3MTgxOTk2NTQuMDc3MzA3LCJleHAiOjE3NDk3MzU2NTQuMDY1NDQxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.wVHfswnjsyoekQ1F0nXQo-NRHN9fL23v2fOQpXwCf_wvLTjV236P1ylskblbUzN8m5FVvjGD6Bi_n38jMsGygVHx0UsPhyeJlvSxlaNbTGl360NKg3sQapsaqmXEI5hc_0QdtJBRBK6fCK8ZbJbyqWR1HRO2qLeiL3TfcDyM3MziaPSnBBgTbxoPVJt4_uTDCUUt4QeXGxzCXOqFCEEKWu1oISufQPQMzYAtipqPCt1tDXTBAmVRSIlN8bpgUUTNNr_aXGlhZCJnfUcggg5XnsbUuDhv409cMpk4XtE6pR9vRnOmVyM2j2zXChXq2MaDZkX68BxdwYEIMARfKc4Y18QRInh7_9GoA4TkQhqXSoode4MicVbvdvwNG1H4heIiHcXS7-LNNKYYcsmX1ws9wwGiFOKg-cGRcDivzShqFKwzsYxYZAnj4oQGodEiPf-Vmj6l3GZj_5gQzqfsojZhR_Qxe6TnGJoQy4bqA2ykmTM_uP6f5NUKM6XUBSZQygvfN8wSZI5HRZnQ0FPvwmucBYmFDRhyNm88HU5_xcmm0oWQAxWuPAsa2S_alNPvpC7Ezzgd3Y4dj9vN0h98ejWlJNUZe21WJIYriA_aKLeRhY29nLscQrOIgJi6QxFv2gaIlwfa0HMF0e2b8cL8-2PN4VMs9FWTPJmmO0bpi15FT1s\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Send Verification code",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "identifier",
+											"value": "companyOne",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "username",
+											"description": "username || mobile_number",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/admin/send-verification-code",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"send-verification-code"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "identifier",
+													"value": "companyOne",
+													"type": "text"
+												},
+												{
+													"key": "type",
+													"value": "username",
+													"description": "username || mobile_number",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/admin/send-verification-code",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"send-verification-code"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 13:39:46 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 13:39:46 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Verification code sent\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Verify Code",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "identifier",
+											"value": "companyOne",
+											"type": "text"
+										},
+										{
+											"key": "type",
+											"value": "username",
+											"description": "username || mobile_number",
+											"type": "text"
+										},
+										{
+											"key": "code",
+											"value": "955239",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/admin/verify-code",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"verify-code"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "identifier",
+													"value": "companyOne",
+													"type": "text"
+												},
+												{
+													"key": "type",
+													"value": "username",
+													"description": "username || mobile_number",
+													"type": "text"
+												},
+												{
+													"key": "code",
+													"value": "955239",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/admin/verify-code",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"verify-code"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 13:40:32 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 13:40:32 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "57"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Verification successful\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{admin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/v1/admin/profile",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"profile"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{url}}/api/v1/admin/profile",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"profile"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 13:41:23 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 13:41:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"6ba12b65-e690-4e70-81c3-5dd6b8815a98\",\n        \"name\": \"admin\",\n        \"username\": \"companyOne\",\n        \"mobile_number\": \"01020187069\",\n        \"email\": \"companyOne@gmail.com\"\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Job",
+					"item": [
+						{
+							"name": "list",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{admin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/v1/admin/jobs",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"jobs"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "list",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{url}}/api/v1/admin/jobs",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"jobs"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 15:59:23 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 15:59:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": [\n        {\n            \"id\": \"fec90217-f76c-415d-9b8d-7d4cc6861e33\",\n            \"title\": \"software developer\",\n            \"description\": \"About the job\\nResponsibilities:\\nCoding and designing\\nIntegrates basic principles of function with processes and procedures to assignments within own work area\\nRelational Database Knowledge\\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\\nUnit testing and documentation.\\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\\nGood analytical skills\",\n            \"location\": \"Cairo, Cairo, Egypt\",\n            \"status\": \"open\",\n            \"created_at\": \"2024-06-12\"\n        },\n        {\n            \"id\": \"b096d90d-052b-487b-87ef-8661117c534b\",\n            \"title\": \"software developer\",\n            \"description\": \"About the job\\nResponsibilities:\\nCoding and designing\\nIntegrates basic principles of function with processes and procedures to assignments within own work area\\nRelational Database Knowledge\\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\\nUnit testing and documentation.\\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\\nGood analytical skills\",\n            \"location\": \"Cairo, Cairo, Egypt\",\n            \"status\": \"open\",\n            \"created_at\": \"2024-06-12\"\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://127.0.0.1:8000/api/v1/admin/jobs?page=1\",\n        \"last\": \"http://127.0.0.1:8000/api/v1/admin/jobs?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://127.0.0.1:8000/api/v1/admin/jobs?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://127.0.0.1:8000/api/v1/admin/jobs\",\n        \"per_page\": 15,\n        \"to\": 2,\n        \"total\": 2\n    },\n    \"message\": \"\"\n}"
+								}
+							]
+						},
+						{
+							"name": "show",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{admin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/v1/admin/jobs/acff0b7e-c4bc-4694-9b20-dba12276ce00",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"jobs",
+										"acff0b7e-c4bc-4694-9b20-dba12276ce00"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{url}}/api/v1/admin/jobs/acff0b7e-c4bc-4694-9b20-dba12276ce00",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"jobs",
+												"acff0b7e-c4bc-4694-9b20-dba12276ce00"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 15:58:44 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 15:58:44 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"acff0b7e-c4bc-4694-9b20-dba12276ce00\",\n        \"title\": \"software developer\",\n        \"description\": \"About the job\\nResponsibilities:\\nCoding and designing\\nIntegrates basic principles of function with processes and procedures to assignments within own work area\\nRelational Database Knowledge\\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\\nUnit testing and documentation.\\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\\nGood analytical skills\",\n        \"location\": \"Cairo, Cairo, Egypt\",\n        \"status\": \"open\",\n        \"created_at\": \"2024-06-12\"\n    },\n    \"message\": \"\"\n}"
+								},
+								{
+									"name": "unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{url}}/api/v1/admin/jobs/acff0b7e-c4bc-4694-9b20-dba12276ce00",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"jobs",
+												"acff0b7e-c4bc-4694-9b20-dba12276ce00"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 15:59:01 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 15:59:01 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"This action is unauthorized.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "create",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{admin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "software developer",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "About the job\nResponsibilities:\nCoding and designing\nIntegrates basic principles of function with processes and procedures to assignments within own work area\nRelational Database Knowledge\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\nUnit testing and documentation.\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\nGood analytical skills",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "Cairo, Cairo, Egypt ",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "open",
+											"description": "in:open,closed,pending",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/admin/jobs",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"jobs"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "software developer",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "About the job\nResponsibilities:\nCoding and designing\nIntegrates basic principles of function with processes and procedures to assignments within own work area\nRelational Database Knowledge\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\nUnit testing and documentation.\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\nGood analytical skills",
+													"type": "text"
+												},
+												{
+													"key": "location",
+													"value": "Cairo, Cairo, Egypt ",
+													"type": "text"
+												},
+												{
+													"key": "status",
+													"value": "open",
+													"description": "in:open,closed,pending",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/admin/jobs",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"jobs"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 15:59:41 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 15:59:41 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "57"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"d186019c-aa9d-4e59-8891-fe3f8feb5683\",\n        \"title\": \"software developer\",\n        \"description\": \"About the job\\nResponsibilities:\\nCoding and designing\\nIntegrates basic principles of function with processes and procedures to assignments within own work area\\nRelational Database Knowledge\\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\\nUnit testing and documentation.\\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\\nGood analytical skills\",\n        \"location\": \"Cairo, Cairo, Egypt\",\n        \"status\": \"open\",\n        \"created_at\": \"2024-06-12\"\n    },\n    \"message\": \"Job created successfully\"\n}"
+								}
+							]
+						},
+						{
+							"name": "update",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{admin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "laravel developer",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Responsibilities:\nCoding and designing\nIntegrates basic principles of function with processes and procedures to assignments within own work area\nRelational Database Knowledge\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\nUnit testing and documentation.\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\nGood analytical skills",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "Cairo, Cairo, Egypt ",
+											"type": "text"
+										},
+										{
+											"key": "status",
+											"value": "closed",
+											"description": "in:open,closed,pending",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PUT",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/admin/jobs/acff0b7e-c4bc-4694-9b20-dba12276ce00",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"jobs",
+										"acff0b7e-c4bc-4694-9b20-dba12276ce00"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "laravel developer",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "Responsibilities:\nCoding and designing\nIntegrates basic principles of function with processes and procedures to assignments within own work area\nRelational Database Knowledge\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\nUnit testing and documentation.\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\nGood analytical skills",
+													"type": "text"
+												},
+												{
+													"key": "location",
+													"value": "Cairo, Cairo, Egypt ",
+													"type": "text"
+												},
+												{
+													"key": "status",
+													"value": "closed",
+													"description": "in:open,closed,pending",
+													"type": "text"
+												},
+												{
+													"key": "_method",
+													"value": "PUT",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/admin/jobs/acff0b7e-c4bc-4694-9b20-dba12276ce00",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"jobs",
+												"acff0b7e-c4bc-4694-9b20-dba12276ce00"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 16:00:23 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 16:00:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"acff0b7e-c4bc-4694-9b20-dba12276ce00\",\n        \"title\": \"laravel developer\",\n        \"description\": \"Responsibilities:\\nCoding and designing\\nIntegrates basic principles of function with processes and procedures to assignments within own work area\\nRelational Database Knowledge\\nProgramming with a consistency, timeliness and as per quality standards adopted by the group.\\nUnit testing and documentation.\\nUnderstanding pre-existing code, fixing bugs and doing enhancements to the product.\\nGood analytical skills\",\n        \"location\": \"Cairo, Cairo, Egypt\",\n        \"status\": \"closed\",\n        \"created_at\": \"2024-06-12\"\n    },\n    \"message\": \"Job updated successfully\"\n}"
+								}
+							]
+						},
+						{
+							"name": "delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{admin}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/admin/jobs/918c9372-d515-4c08-ad20-7a21811570d5",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"jobs",
+										"918c9372-d515-4c08-ad20-7a21811570d5"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "delete",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "{{url}}/api/v1/admin/jobs/acff0b7e-c4bc-4694-9b20-dba12276ce00",
+											"host": [
+												"{{url}}"
+											],
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"jobs",
+												"acff0b7e-c4bc-4694-9b20-dba12276ce00"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 16:00:41 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Wed, 12 Jun 2024 16:00:41 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.12"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"Job deleted successfully\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Applications",
+					"item": [
+						{
+							"name": "list",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{user}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/api/v1/admin/applications",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"applications"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		},
+		{
+			"key": "user",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYjk5NmU5Zjk5M2I4OGQ2NGE1ZmE1NDUyYWY5OTY5YzdjZjQ5MWZkNTc0ZTIyZGI0YWJkNzdmNWZmZjU5YjJiMGU2MDVmN2Y2MmVjZTVjYzIiLCJpYXQiOjE3MTgyMTA5NDAuOTczNjg0LCJuYmYiOjE3MTgyMTA5NDAuOTczNjk3LCJleHAiOjE3NDk3NDY5NDAuOTY4MTE2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.LearpjYrzoGb9Z59vDqTOcj63GTG1kYLFaq29gnDGYGplkI413phx6GO8yEBTcMGVo1KnApnJZXOUJMqhF61n_q4bCUvpw96YgZ6kOm-QXDxBx2BskM6Cw2KFXthejJH7ZDqrESuE0_oh95fTAEQLJq0h4npwXyIl4s4cWI0GxJpZN9jr1wYKP6jxFmPa-gUBn1Mgm6DJVim4XYr-lBJkSCZ_uvRcoiYZHIwNhTbhQJka_6zi1jJHVC0MWDLeTRP3rAsQeivrWHQFaeOTn6PUhe22fmtlMgsN70JSeHWwxvY2_CQ2Urn9xJ8BfHvgQel9EW4mdaiHdS1s1fxHK1ZO_xNjj-JAet1L4UvavJ0wu_YP-C6uFc8SKLUEIPPJ_4vOqLXgYT7MwHSnQS96-MlmHm8w007yTX84iVTI5WE45aKPCF6nz0vax0Z1vtOo-DR107qO8914ZRZ2sUXKNDrS5oEw7OdRUoCVNtOu4YwEM473e0Tyt1MEWpSVl9wA6aMt1oJueAmIXZ_yLJ4cZx3zbVy203Fp0E1XttspnfprpF4kRMY59jpQC1DPSalfm6ql8vtHpoIZPnjll8xMCTX9vHsVn40Q6eVxoOEekoQsqMQUAwpjK5pTZtpaHAW5XCYy-u7MuOhFAcpD4iAoWWmWuWMv284pdnUOIAF-2NKvwA",
+			"type": "string"
+		},
+		{
+			"key": "admin",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWVkOTkyZjYyMzg5YWZlNWZiNDk4NGQ3ZTU1NjliZmNhOGRhMzFhZWJkYzIzYjk3MDI5ODg5ZDJjYzNiNzExMGJkNmIxNDJmNGVhYzQxMDMiLCJpYXQiOjE3MTgxOTk2NTQuMDc3MzA2LCJuYmYiOjE3MTgxOTk2NTQuMDc3MzA3LCJleHAiOjE3NDk3MzU2NTQuMDY1NDQxLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.wVHfswnjsyoekQ1F0nXQo-NRHN9fL23v2fOQpXwCf_wvLTjV236P1ylskblbUzN8m5FVvjGD6Bi_n38jMsGygVHx0UsPhyeJlvSxlaNbTGl360NKg3sQapsaqmXEI5hc_0QdtJBRBK6fCK8ZbJbyqWR1HRO2qLeiL3TfcDyM3MziaPSnBBgTbxoPVJt4_uTDCUUt4QeXGxzCXOqFCEEKWu1oISufQPQMzYAtipqPCt1tDXTBAmVRSIlN8bpgUUTNNr_aXGlhZCJnfUcggg5XnsbUuDhv409cMpk4XtE6pR9vRnOmVyM2j2zXChXq2MaDZkX68BxdwYEIMARfKc4Y18QRInh7_9GoA4TkQhqXSoode4MicVbvdvwNG1H4heIiHcXS7-LNNKYYcsmX1ws9wwGiFOKg-cGRcDivzShqFKwzsYxYZAnj4oQGodEiPf-Vmj6l3GZj_5gQzqfsojZhR_Qxe6TnGJoQy4bqA2ykmTM_uP6f5NUKM6XUBSZQygvfN8wSZI5HRZnQ0FPvwmucBYmFDRhyNm88HU5_xcmm0oWQAxWuPAsa2S_alNPvpC7Ezzgd3Y4dj9vN0h98ejWlJNUZe21WJIYriA_aKLeRhY29nLscQrOIgJi6QxFv2gaIlwfa0HMF0e2b8cL8-2PN4VMs9FWTPJmmO0bpi15FT1s",
+			"type": "string"
+		}
+	]
+}
